@@ -1,0 +1,2 @@
+2026-04-22 18:56:21,788 - ERROR - Error en /divide con a=10, b=0: division by zero
+2026-04-22 18:56:29,715 - ERROR - Error en /square con x=-3: valor negativo no permitido
