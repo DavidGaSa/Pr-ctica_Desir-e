@@ -1,0 +1,18 @@
+REPORTE DE REFACTORIZACION
+
+1. Code smells detectados
+- Validación insuficiente de entradas en endpoints.
+- Manejo de errores repetido en varios bloques try/except.
+- Lógica de negocio acoplada directamente a los endpoints.
+- Logging mejorable en detalle y estructura.
+
+2. Riesgos identificados
+- Entradas inválidas pueden provocar errores HTTP 500.
+- El servidor depende de validaciones manuales dentro de cada endpoint.
+- La repetición de código aumenta el riesgo de inconsistencias futuras.
+
+3. Mejoras recomendadas
+- Centralizar el manejo de errores.
+- Separar lógica de negocio y capa HTTP.
+- Añadir pruebas unitarias para más casos límite.
+- Mejorar mensajes de log para facilitar observabilidad.
